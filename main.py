@@ -6,7 +6,6 @@ def limpandodados():
     dataframe = pd.DataFrame(tabela)
     print(dataframe.head())
     print(dataframe.tail())
-    return dataframe # retornando o dataframe para ser visivel fora dessa função
 
 dataframe = limpandodados()
 
