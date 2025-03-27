@@ -21,7 +21,7 @@ def unircolunas(dataframe):
 def drop_duplicates(dataframe):
    if 'REGIÕES POR ANO' in dataframe.columns and 'TOTAL DE ROUBOS' in dataframe.columns:
         dataframe_sem_duplicadas = dataframe.drop_duplicates(subset=['REGIÕES POR ANO', 'TOTAL DE ROUBOS'], keep='first') # keep garante deixar a primeira ocorrencia de duplicação e excluir o resto
-        print("\nDataFrame sem duplicatas:")
+        print("\n DataFrame sem duplicatas: \n")
         print(dataframe_sem_duplicadas)
         return dataframe_sem_duplicadas
    else:
